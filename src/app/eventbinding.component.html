@@ -1,0 +1,27 @@
+<style>
+table, th, tr, td {
+    border: 1px solid black;
+}
+td {
+    padding-left: 10px;
+}
+th {
+    text-align: center;
+    padding: 10px;
+}
+</style>
+<div>
+    <table>
+        <tr>
+            <th>EMPLOYEE</th>
+            <th>DETAILS</th>
+        </tr>
+
+        <tr *ngIf = "showDetails"> <td>FIRST NAME</td> <td>{{f_name}} </td> </tr>
+        <tr *ngIf = "showDetails"> <td>SECOND NAME</td> <td>{{s_name}}</td> </tr>
+        <tr *ngIf = "showDetails"> <td>AGE</td> <td>{{age}}</td> </tr>
+        <tr *ngIf = "showDetails"> <td>COLLAGE</td> <td>{{collage}}</td> </tr>
+    </table>
+
+    <button (click)="buttonclicked()">{{showDetails ? 'SHOW' : 'HIDE'}} DETAILS</button>
+</div>
