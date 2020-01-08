@@ -11,7 +11,7 @@ export class EventBinding {
     age = 20;
     collage : string = "NIT"
 
-    public showDetails : boolean = true;
+    public showDetails : boolean = false;
 
     buttonclicked() : void {
         this.showDetails = this.showDetails ? false : true;

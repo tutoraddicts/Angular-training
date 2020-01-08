@@ -17,11 +17,11 @@ th {
             <th>DETAILS</th>
         </tr>
 
-        <tr *ngIf = "showDetails"> <td>FIRST NAME</td> <td>{{f_name}} </td> </tr>
-        <tr *ngIf = "showDetails"> <td>SECOND NAME</td> <td>{{s_name}}</td> </tr>
+        <tr> <td>FIRST NAME</td> <td>{{f_name}} </td> </tr>
+        <tr> <td>SECOND NAME</td> <td>{{s_name}}</td> </tr>
         <tr *ngIf = "showDetails"> <td>AGE</td> <td>{{age}}</td> </tr>
         <tr *ngIf = "showDetails"> <td>COLLAGE</td> <td>{{collage}}</td> </tr>
     </table>
 
-    <button (click)="buttonclicked()">{{showDetails ? 'SHOW' : 'HIDE'}} DETAILS</button>
+    <button (click)="buttonclicked()">{{showDetails ? 'HIDE' : 'SHOW'}} DETAILS</button>
 </div>

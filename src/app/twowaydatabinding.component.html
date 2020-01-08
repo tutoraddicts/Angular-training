@@ -1,0 +1,19 @@
+<style>
+input {
+    padding: 5px;
+    margin: 5px;
+}
+</style>
+<!-- <input [value] = 'f_name' (input) = 'f_name = $event.target.value'/> -->
+<input [(ngModel)] = 'f_name' placeholder="FIRST NAME"/>
+<a>{{f_name}}</a>
+<br/>
+
+<!-- <input [value] = 's_name' (input) = 's_name = $event.target.value'/> -->
+<input [(ngModel)] = 's_name' placeholder="SECOND NAME"/>
+<a>{{s_name}}</a>
+<br/>
+
+<!-- <input [value] = 'email' (input) = 'email = $event.target.value'/> -->
+<input [(ngModel)] = 'email' type="email" placeholder="EMAIL ADDRESS"/>
+<a>{{email}}</a>
