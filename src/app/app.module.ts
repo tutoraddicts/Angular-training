@@ -8,6 +8,7 @@ import { EmployeeComponent} from './employee.component';
 import { StylesExample } from './styles.example';
 import { EventBinding } from './eventbinding.component';
 import {TwoWayDataBinding} from './twowaydatabinding.component';
+import { StructuralDerective } from './structuralderective.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import {TwoWayDataBinding} from './twowaydatabinding.component';
     EmployeeComponent,
     StylesExample,
     EventBinding,
-    TwoWayDataBinding
+    TwoWayDataBinding,
+    StructuralDerective
   ],
   imports: [
     BrowserModule,
