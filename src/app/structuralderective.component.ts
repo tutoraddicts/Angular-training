@@ -13,6 +13,7 @@ export class StructuralDerective {
         { id : 'emp104', name : 'Mary', gender : 'Female', annualSalary : 600000, dob : '23/09/1988'}
     ]
 
+    colorName : string = ""
     colorNames = ['red', 'green', 'yellow', 'purple']
     check() : void {
         

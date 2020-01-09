@@ -9,6 +9,8 @@ import { StylesExample } from './styles.example';
 import { EventBinding } from './eventbinding.component';
 import {TwoWayDataBinding} from './twowaydatabinding.component';
 import { StructuralDerective } from './structuralderective.component';
+import { TitlePipe } from './title.pipe';
+import {ChildComponent} from './chiled.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { StructuralDerective } from './structuralderective.component';
     StylesExample,
     EventBinding,
     TwoWayDataBinding,
-    StructuralDerective
+    StructuralDerective, 
+    TitlePipe,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

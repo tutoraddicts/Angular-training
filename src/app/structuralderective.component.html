@@ -1,5 +1,7 @@
 <style>
-    table, td, tr{
+    table,
+    td,
+    tr {
         border: 2px solid black;
     }
 </style>
@@ -14,9 +16,9 @@
             <td>DATE OF BIRTH</td>
         </thead>
         <tbody>
-            <tr *ngFor = 'let employee of employees'>
-                <td>{{employee.id}}</td>
-                <td>{{employee.name}}</td>
+            <tr *ngFor='let employee of employees'>
+                <td>{{employee.id | uppercase}}</td>
+                <td>{{employee.name | titlePipe : employee.gender}}</td>
                 <td>{{employee.gender}}</td>
                 <td>{{employee.annualSalary}}</td>
                 <td>{{employee.dob}}</td>
@@ -25,14 +27,13 @@
     </table>
 </div>
 
-<div>
+<!-- <div>
     CHEACK YOUR COLOR PRESENT OR NOT <input [(ngModel)] = 'colorName' placeholder="COLOR NAME"/>
     <br/>
-    <!-- <button (click) = 'check()'>CHECK</button> -->
+    <button (click) = 'check()'>CHECK</button>
     <div [ngSwitch] = "colorName">
         <div *ngFor = 'let color of colorNames'>
-            <div *ngSwitchCase = "'{{color}}'"{{color}}>YOUR COLOR PRESENT</div>
+            <div *ngSwitchCase = "'{{color | lowercase }}'">YOUR COLOR PRESENT</div>
         </div>
-        
     </div>
-</div>
+</div> -->
