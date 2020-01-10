@@ -7,7 +7,7 @@ import { Component } from '@angular/core'
 
 export class StructuralDerective {
 
-    genderType : string = "";
+    genderType : string = "all";
     employees : any[] = [
         { id : 'emp101', name : 'Tom', gender : 'Male', annualSalary : 40000, dob : '20/09/1987'},
         { id : 'emp102', name : 'Simon', gender : 'Male', annualSalary : 350000, dob : '22/11/1987'},

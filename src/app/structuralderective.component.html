@@ -7,9 +7,9 @@
 </style>
 <div style="border: 2px solid black; width: max-content;">
     SELECT GENDER
-    <input type="radio" name = "genderType" value="all" checked (input) = 'gender = $event.target.value'>ALL
-    <input type = "radio" name = "genderType" value="male" (input) = 'gender = $event.target.value'>MALE
-    <input type="radio" name = "genderType" value="female" (input) = 'gender = $event.target.value'>FEMALE
+    <input type="radio" name = "genderType" value="all" checked (input) = 'genderType = $event.target.value'>ALL
+    <input type = "radio" name = "genderType" value="male" (input) = 'genderType = $event.target.value'>MALE
+    <input type="radio" name = "genderType" value="female" (input) = 'genderType = $event.target.value'>FEMALE
 </div>
 <div>
     <table>
@@ -21,7 +21,7 @@
             <td>DATE OF BIRTH</td>
         </thead>
         <tbody *ngFor='let employee of employees'>
-            <tr *ngIf = 'employee.gender.toLowerCase() === gender.toLowerCase() || gender === "all"'>
+            <tr *ngIf = 'employee.gender.toLowerCase() === genderType.toLowerCase() || genderType === "all"'>
                 <td>{{employee.id | uppercase}}</td>
                 <td>{{employee.name | titlePipe : employee.gender}}</td>
                 <td>{{employee.gender}}</td>
@@ -31,7 +31,7 @@
         </tbody>
     </table>
 </div>
-<div>{{gender}}</div>
+<div>{{genderType}}</div>
 
 <!-- <div>
     CHEACK YOUR COLOR PRESENT OR NOT <input [(ngModel)] = 'colorName' placeholder="COLOR NAME"/>
